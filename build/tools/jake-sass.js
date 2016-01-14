@@ -10,10 +10,11 @@
     function renderFile(fileName, options, cb) {
         sass.render({
             file: fileName,
-            options: options
+            options: options.sassOptions
         }, function(err, result) {
             if (err) throw err;
             let destFile = path.join(options.destFolder, fileName.substr(fileName.lastIndexOf(options.srcFolder) + options.srcFolder.length));
+            console.log("eee"+destFile);
             let getDirName = path.dirname(destFile);
             console.log(getDirName);
             mkdirp(getDirName, function(err) {

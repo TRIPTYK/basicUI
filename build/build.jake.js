@@ -5,20 +5,23 @@
     let startTime = Date.now();
 
     desc('default task');
-    task('default', ['build']);
+    task('default', ['build'], ()=> {
+        let elapsedSeconds = (Date.now() - startTime) / 1000;
+        console.log('\n\nBUILD OK  (' + elapsedSeconds.toFixed(2) + 's)');
+
+    });
 
 
     desc('build the css');
-    task('build', function() {
+    task('build', ()=> {
         let options = {
-            files: 'src/**/*.sass',
+            files: 'src/**/*.scss',
             srcFolder: 'src/',
             destFolder: 'dist/',
-            sassOptions: {
-            }
+            sassOptions: {}
         };
-        jakeSass.sassify(options,complete,fail);
-        let elapsedSeconds = (Date.now() - startTime) / 1000;
-        console.log('\n\nBUILD OK  (' + elapsedSeconds.toFixed(2) + 's)');
+        jakeSass.sassify(options, complete, fail);
+    }, {
+        async: true
     });
 }());
