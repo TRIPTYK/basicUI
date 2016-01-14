@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/TRIPTYK/basicUI/issues"
   },
-  "homepage": "https://github.com/TRIPTYK/basicUI#readme"
+  "homepage": "https://github.com/TRIPTYK/basicUI#readme",
+  "devDependencies": {
+    "jake": "^8.0.12"
+  },
+  "dependencies": {
+    "node-sass": "^3.4.2"
+  }
 }
