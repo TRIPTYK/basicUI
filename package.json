@@ -1,0 +1,29 @@
+{
+  "name": "basic-ui",
+  "version": "0.0.1",
+  "description": "Creation of sass element for creating basic ui for our applications",
+  "main": "gulpfile.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRIPTYK/basicUI.git"
+  },
+  "keywords": [
+    "CSS",
+    "SASS",
+    "SCSS",
+    "UI",
+    "BASIC"
+  ],
+  "author": "SMITH AND WILLIAMS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TRIPTYK/basicUI/issues"
+  },
+  "homepage": "https://github.com/TRIPTYK/basicUI#readme"
+}
