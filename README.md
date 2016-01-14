@@ -1,4 +1,6 @@
-# basicUI
+![alt tag](https://raw.githubusercontent.com/TRIPTYK/basicUI/master/assets/logo.png) 
+# basicUI  
+
 Basic sass set for rapid ui integration  
 
 To install don't forget npm install
