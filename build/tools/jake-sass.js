@@ -7,29 +7,31 @@
     let mkdirp = require('mkdirp');
     let sass = require('node-sass');
 
-    function renderFile(fileName, options, cb) {
-        sass.render({
-            file: fileName,
-            options: options.sassOptions
-        }, function(err, result) {
+    function renderFile(fileName, options, sassOptions, cb) {
+        sassOptions.file=fileName;
+        sass.render(sassOptions, function(err, result) {
             if (err) throw err;
             let destFile = path.join(options.destFolder, fileName.substr(fileName.lastIndexOf(options.srcFolder) + options.srcFolder.length));
-            console.log("eee"+destFile);
+            destFile = destFile.substr(0, destFile.length - 4) + 'css';
             let getDirName = path.dirname(destFile);
-            console.log(getDirName);
             mkdirp(getDirName, function(err) {
                 if (err) console.error(err);
-                fs.writeFile(destFile, result.code, 'utf8', cb);
+                fs.writeFile(destFile, result.css, 'utf8', cb);
             });
         });
     }
 
     exports.sassify = function(options, success, fail) {
         let files = options.files;
-        let sassOptions = options;
+        let sassOptions = {};
+        for (var z in options.sassOptions) {
+            sassOptions[z] = options.sassOptions[z];
+        }
+        console.log(sassOptions);
+
         glob(files, (err, files) => {
             async.each(files, (item, callback) => {
-                renderFile(item, sassOptions, callback);
+                renderFile(item, options,sassOptions, callback);
             }, (err) => {
                 if (err) return fail(err);
                 success();

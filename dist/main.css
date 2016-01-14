@@ -1,0 +1,11 @@
+body {
+  color: #FF0000;
+}
+
+#wrapper h1 {
+  size: 1.2em;
+}
+
+#wrapper h1 a {
+  color: red;
+}
