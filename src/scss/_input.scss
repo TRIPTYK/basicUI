@@ -36,17 +36,12 @@
 		    box-shadow: none;
 	    }
     }
+
     &.error {
     	input {
     		background: rgba(255,0,0,.1);
     		border: 1px solid rgba(255,0,0,.5);
     	}
-    }
-
-    .icon {
-    	display: inline-flex;
-    	width: 35px;
-    	height: 40px;
-    	background: url('../assets/images/icons.png') no-repeat;
-    }
+    }	
+	
 }
