@@ -38,7 +38,7 @@
     }
 }
 
-.button input {
+.button {
     @include button(1em, #0093cb, #48CDFF, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.8), 5px 2px);
 }
 
