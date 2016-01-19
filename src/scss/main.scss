@@ -1,16 +1,21 @@
 @import 'button';
 @import 'input';
+@import 'baseSite';
+@import 'variables';
 
+<<<<<<< HEAD
 
 body{
     color:#fff;
+=======
+.container {
+	width: 960px;
+	margin: 0 auto;
+>>>>>>> a60392b85b986bd2f2c91b5383281547c97107ad
 }
 
-#wrapper{
-    h1{
-        size:1.2em;
-        a{
-            color:red;
-        }
-    }
+.divider {
+	border: 0;
+  height: 1px;
+  @include background(linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white));
 }

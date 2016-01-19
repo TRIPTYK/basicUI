@@ -14,6 +14,7 @@
 
     desc('build the css');
     task('build', () => {
+        console.log("Starting build process");
         let options = {
             files: 'src/**/*.scss',
             srcFolder: 'src/',
@@ -23,6 +24,7 @@
             }
         };
         jakeSass.sassify(options, complete, fail);
+          console.log("Finished scss process");
     }, {
         async: true
     });
