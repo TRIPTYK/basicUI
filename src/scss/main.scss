@@ -1,17 +1,16 @@
 @import 'reset';
 @import 'button';
 @import 'input';
+@import 'baseSite';
+@import 'variables';
 
-
-body{
-    color:#dae;
+.container {
+	width: 960px;
+	margin: 0 auto;
 }
 
-#wrapper{
-    h1{
-        size:1.2em;
-        a{
-            color:green;
-        }
-    }
+.divider {
+	border: 0;
+  height: 1px;
+  @include background(linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white));
 }

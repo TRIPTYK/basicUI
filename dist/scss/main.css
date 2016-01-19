@@ -129,10 +129,90 @@ html {
     background: rgba(255, 0, 0, 0.1);
     border: 1px solid rgba(255, 0, 0, 0.5); }
 
-body {
-  color: #dae; }
+h1.tpk,
+h2.tpk,
+h3.tpk,
+h4.tpk,
+h5.tpk,
+h6.tpk {
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.2; }
 
-#wrapper h1 {
-  size: 1.2em; }
-  #wrapper h1 a {
-    color: green; }
+h1.tpk {
+  font-size: 3rem; }
+
+h2.tpk {
+  font-size: 2.5rem; }
+
+h3.tpk {
+  font-size: 2rem; }
+
+h4.tpk {
+  font-size: 1.5rem; }
+
+h5.tpk {
+  font-size: 1rem; }
+
+h6.tpk {
+  font-size: 0.8rem; }
+
+p.tpk {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000000; }
+
+a.tpk {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #aaaaaa; }
+  a.tpk:hover {
+    text-decoration: none; }
+
+ul.tpk {
+  list-style-type: none;
+  margin: 1rem 0;
+  padding: 0; }
+  ul.tpk .item {
+    display: list-item;
+    table-layout: fixed;
+    list-style-type: none;
+    list-style-position: outside;
+    padding: .25rem 0;
+    line-height: 1.2rem; }
+
+ul.tpk.horizontal {
+  font-size: 0; }
+  ul.tpk.horizontal .item {
+    display: inline-block;
+    padding: 0 1rem 0 0;
+    font-size: 1rem; }
+
+ol.tpk {
+  counter-reset: counter;
+  margin-left: 1.25rem; }
+  ol.tpk .item {
+    margin-bottom: .5rem;
+    overflow: hidden; }
+    ol.tpk .item:before {
+      content: counter(counter);
+      counter-increment: counter;
+      font-size: 1rem;
+      margin-right: .5rem;
+      display: inline-block;
+      vertical-align: middle; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: -owg-linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white);
+  background: -webkit-linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white);
+  background: -moz-linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white);
+  background: -o-linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white);
+  -pie-background: -pie-linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white);
+  background: linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white); }
