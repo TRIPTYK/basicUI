@@ -27,7 +27,6 @@
         async: true
     });
 
-
     watchTask(['build'], function() {
         this.watchFiles.include([
             'src/**/*.scss'

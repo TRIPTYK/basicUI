@@ -16,7 +16,9 @@
             let getDirName = path.dirname(destFile);
             mkdirp(getDirName, function(err) {
                 if (err) console.error(err);
-                fs.writeFile(destFile, result.css, 'utf8', cb);
+                //ERROR Callback was already called if multiple files
+                //fs.writeFile(destFile, result.css, 'utf8', cb);
+                fs.writeFile(destFile, result.css, 'utf8');
             });
         });
     }

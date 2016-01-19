@@ -1,0 +1,17 @@
+@import 'reset';
+@import 'button';
+@import 'input';
+
+
+body{
+    color:#000;
+}
+
+#wrapper{
+    h1{
+        size:1.2em;
+        a{
+            color:red;
+        }
+    }
+}
