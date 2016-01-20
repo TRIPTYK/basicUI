@@ -11,7 +11,6 @@ h3.tpk,
 h4.tpk,
 h5.tpk,
 h6.tpk {
-	font-family: $primaryFont;
 	line-height: 1.2;
 }
 h1.tpk {
@@ -33,13 +32,11 @@ h6.tpk  {
 	font-size: 0.8rem;
 }
 p.tpk {
-	font-family: $primaryFont;
 	font-size: 1rem;
 	line-height: 1.5;
 	color: $primaryColor;
 }
 a.tpk {
-	font-family: $primaryFont;
 	font-size: 1rem;
 	line-height: 1.2;
 	color: $colorLink;

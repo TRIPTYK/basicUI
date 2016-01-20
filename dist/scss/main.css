@@ -93,7 +93,185 @@ html {
     background-color: #48CDFF;
     background-image: none;
     box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-    color: rgba(0, 0, 0, 0.8); }
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent; }
+    .button button:hover {
+      background-color: #48CDFF;
+      background-image: none;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      color: rgba(0, 0, 0, 0.8); }
+  .button.left, .button.middle, .button.right {
+    float: left; }
+  .button.left button {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px; }
+  .button.middle button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  .button.right button {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0; }
+  .button.icon.noContent button .fa {
+    padding-left: 0; }
+  .button.icon button .fa {
+    color: #fff;
+    line-height: 0.99em;
+    padding-left: 1em; }
+  .button.buttonRed {
+    min-height: 1em; }
+    .button.buttonRed button {
+      cursor: pointer;
+      display: inline-block;
+      min-height: 1em;
+      outline: none;
+      border: none;
+      vertical-align: baseline;
+      background: #CB0000 none;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1em;
+      text-transform: none;
+      text-shadow: none;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      font-style: normal;
+      margin: 0;
+      padding: 1em 1.5em 1em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent; }
+      .button.buttonRed button:hover {
+        background-color: #DC6C6C;
+        background-image: none;
+        box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+        color: rgba(0, 0, 0, 0.8); }
+    .button.buttonRed.left, .button.buttonRed.middle, .button.buttonRed.right {
+      float: left; }
+    .button.buttonRed.left button {
+      -webkit-border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      -ms-border-radius: 5px 0 0 5px;
+      -o-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .button.buttonRed.middle button {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+    .button.buttonRed.right button {
+      -webkit-border-radius: 0 5px 5px 0;
+      -moz-border-radius: 0 5px 5px 0;
+      -ms-border-radius: 0 5px 5px 0;
+      -o-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0; }
+    .button.buttonRed.icon.noContent button .fa {
+      padding-left: 0; }
+    .button.buttonRed.icon button .fa {
+      color: #fff;
+      line-height: 0.99em;
+      padding-left: 1em; }
+    .button.buttonRed button {
+      -webkit-border-radius: 5px 0;
+      -moz-border-radius: 5px 0;
+      -ms-border-radius: 5px 0;
+      -o-border-radius: 5px 0;
+      border-radius: 5px 0; }
+  .button.buttonGreen {
+    min-height: 1em; }
+    .button.buttonGreen button {
+      cursor: pointer;
+      display: inline-block;
+      min-height: 1em;
+      outline: none;
+      border: none;
+      vertical-align: baseline;
+      background: #00CB72 none;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1em;
+      text-transform: none;
+      text-shadow: none;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      font-style: normal;
+      margin: 0;
+      padding: 1em 1.5em 1em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent; }
+      .button.buttonGreen button:hover {
+        background-color: #59E0A5;
+        background-image: none;
+        box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+        color: rgba(0, 0, 0, 0.8); }
+    .button.buttonGreen.left, .button.buttonGreen.middle, .button.buttonGreen.right {
+      float: left; }
+    .button.buttonGreen.left button {
+      -webkit-border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      -ms-border-radius: 5px 0 0 5px;
+      -o-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .button.buttonGreen.middle button {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+    .button.buttonGreen.right button {
+      -webkit-border-radius: 0 5px 5px 0;
+      -moz-border-radius: 0 5px 5px 0;
+      -ms-border-radius: 0 5px 5px 0;
+      -o-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0; }
+    .button.buttonGreen.icon.noContent button .fa {
+      padding-left: 0; }
+    .button.buttonGreen.icon button .fa {
+      color: #fff;
+      line-height: 0.99em;
+      padding-left: 1em; }
 
 .input {
   position: relative;
@@ -142,7 +320,6 @@ h3.tpk,
 h4.tpk,
 h5.tpk,
 h6.tpk {
-  font-family: helvetica, arial, sans-serif;
   line-height: 1.2; }
 
 h1.tpk {
@@ -164,13 +341,11 @@ h6.tpk {
   font-size: 0.8rem; }
 
 p.tpk {
-  font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #000000; }
 
 a.tpk {
-  font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   color: #4183c4; }
@@ -348,6 +523,10 @@ form.tpk .checkbox {
 .container {
   width: 960px;
   margin: 0 auto; }
+  .container .row {
+    clear: both;
+    margin: 1em 0;
+    min-height: 3em; }
 
 .lineDivider {
   border: 0;
