@@ -60,11 +60,14 @@
     -o-border-radius: 0 5px 5px 0;
     border-radius: 0 5px 5px 0; }
   .button.icon.noContent button .fa {
-    padding-left: 0; }
+    padding: 0; }
   .button.icon button .fa {
     color: #fff;
     line-height: 0.99em;
     padding-left: 1em; }
+  .button.disabled button {
+    background-color: #add9ea;
+    color: rgba(255, 255, 255, 0.9); }
   .button.buttonRed {
     min-height: 1em; }
     .button.buttonRed button {
@@ -105,7 +108,7 @@
         background-color: #DC6C6C;
         background-image: none;
         box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-        color: rgba(0, 0, 0, 0.8); }
+        color: white; }
     .button.buttonRed.left, .button.buttonRed.middle, .button.buttonRed.right {
       float: left; }
     .button.buttonRed.left button {
@@ -127,11 +130,14 @@
       -o-border-radius: 0 5px 5px 0;
       border-radius: 0 5px 5px 0; }
     .button.buttonRed.icon.noContent button .fa {
-      padding-left: 0; }
+      padding: 0; }
     .button.buttonRed.icon button .fa {
       color: #fff;
       line-height: 0.99em;
       padding-left: 1em; }
+    .button.buttonRed.disabled button {
+      background-color: #eaadad;
+      color: rgba(255, 255, 255, 0.9); }
     .button.buttonRed button {
       -webkit-border-radius: 5px 0;
       -moz-border-radius: 5px 0;
@@ -200,11 +206,14 @@
       -o-border-radius: 0 5px 5px 0;
       border-radius: 0 5px 5px 0; }
     .button.buttonGreen.icon.noContent button .fa {
-      padding-left: 0; }
+      padding: 0; }
     .button.buttonGreen.icon button .fa {
       color: #fff;
       line-height: 0.99em;
       padding-left: 1em; }
+    .button.buttonGreen.disabled button {
+      background-color: #adeacf;
+      color: rgba(255, 255, 255, 0.9); }
 
 .input {
   position: relative;
@@ -243,6 +252,25 @@
   .input.error input {
     background: rgba(255, 0, 0, 0.1);
     border: 1px solid rgba(255, 0, 0, 0.5); }
+
+.tpk-popin {
+  display: none; }
+
+#tpk-popin {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7); }
+  #tpk-popin .popin-container {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out; }
 
 * {
   font-family: helvetica, arial, sans-serif; }

@@ -79,8 +79,14 @@
                 line-height: 0.99em;
                 padding-left: 1em;
             }
+        }   
+    }
+
+    &.disabled {
+        button {
+            background-color: lighten( desaturate( $baseBgColor, 40% ), 40%);
+            color: lighten( desaturate( $baseColor, 40% ), 40%);
         }
-        
     }
     
 }
@@ -88,7 +94,7 @@
     @include button();
     
     &.buttonRed {
-        @include button(1em, #CB0000, #DC6C6C);
+        @include button(1em, #CB0000, #DC6C6C, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
         button {
             @include border-radius(5px 0);
         }
