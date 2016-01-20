@@ -1,0 +1,86 @@
+@import "bower_components/compass-sass-mixins/lib/compass";
+@import "variables";
+
+form.tpk {
+	.field {
+		@include clearfix;
+		margin: 0 0 1rem 0;
+		>label {
+			display: block;
+			margin: 0 0 0.5rem 0;
+			font-family: $secondaryFont;
+			color: $secondaryColor;
+			font-size: 0.8rem;
+			font-weight: bold;
+		}
+		input[type="text"]{
+			margin: 0;
+			outline: 0;
+			@include appearance(none);
+			line-height: 1.2;
+			padding: 0.5rem 1rem;
+			font-size: 1rem;
+			background: $greyLight;
+			border: 1px solid $greyMedium; 
+			color: $secondaryColor;
+			@include border-radius(5px);
+			@include box-shadow($secondaryColor 0 1px 1px inset);
+			@include transition(color, 0.1s, ease, background, 0.1s, ease);
+			&:focus {
+				background: $white;
+				color: darker;
+			}
+		}
+		.dropdown {
+			display: block;
+			height: auto;
+			width: 100%;
+			background: #FFFFFF;
+			border: 1px solid rgba(34, 36, 38, 0.15);
+			border-radius: 0.28571429rem;
+			box-shadow: 0em 0em 0em 0em transparent inset;
+			padding: 0.62em 1em;
+			color: rgba(0, 0, 0, 0.87);
+			-webkit-transition: color 0.1s ease, border-color 0.1s ease;
+			transition: color 0.1s ease, border-color 0.1s ease;
+   	}
+	}
+	.checkbox {
+		position: relative;
+		display: inline-block;
+		@include backface-visibility(hidden);
+		outline: 0;
+		vertical-align: baseline;
+		min-height: 1.1rem;
+		font-size: 1rem;
+		line-height: 1.1rem;
+		min-width: 1.1rem;
+		input[type="checkbox"]{
+			vertical-align: top;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0!important;
+			outline: 0;
+			width: 1.1rem;
+			height: 1.1rem;
+		}
+		input.hidden {
+			z-index: -1;
+		}
+		input.hidden+label {
+			cursor: pointer;
+			@include user-select(none);
+		}
+		>label {
+			position: relative;
+	    display: block;
+	    padding-left: 1.85714em;
+	    outline: 0;
+	    font-size: 1em;
+			color: $secondaryColor;
+			@include transition(color, 0.1s, ease);
+		}
+	}
+}
