@@ -2,6 +2,8 @@
 @import 'input';
 @import 'popin';
 @import 'baseSite';
+@import 'breadcrumb';
+@import 'form';
 @import 'variables';
 
 
@@ -15,7 +17,7 @@
 	}
 }
 
-.divider {
+.lineDivider {
 	border: 0;
   height: 1px;
   @include background(linear-gradient(to right, white, rgba(0, 0, 0, 0.75), white));

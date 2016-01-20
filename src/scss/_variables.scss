@@ -1,4 +1,13 @@
-$primaryFont : helvetica, arial, sans-serif;
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
+$primaryFont : helvetica, arial, sans-serif;
+$secondaryFont : 'Lato', sans-serif;
+
+$black: #111;
+$white: #fff;
 $primaryColor : #000000;
-$colorLink : #aaaaaa;
+$secondaryColor: rgba(0,0,0,.4);
+$colorLink : #4183c4;
+$greyLight : #eaeaea;
+$greyMedium : #cccccc;
+$greyDark : #5A5A5A;

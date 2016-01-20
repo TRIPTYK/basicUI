@@ -29,34 +29,40 @@
 			<h5 class="tpk">H5 : Lorem ipsum dolor sit amet.</h5>
 			<h6 class="tpk">H6 : Lorem ipsum dolor sit amet.</h6>
 
-			<hr class="divider">
+			<hr class="lineDivider">
 
 			<p class="tpk">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident est sapiente architecto perferendis totam asperiores, ducimus impedit fuga vel qtpka quasi harum dolorem distinctio obcaecati.<br />
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nesciunt tempora inventore nemo, qtpka minima delectus excepturi, nihil doloribus maxime sint natus, saepe culpa! Illum animi nesciunt pariatur molestiae fuga, id! Magnam aperiam, rerum omnis veritatis. Delectus dolor consequuntur, vel vero beatae distinctio ipsa, suscipit exercitationem molestias mollitia, a nemo!
 			</p>
 
-			<hr class="divider">
+			<hr class="lineDivider">
 
 			<a href="#" class="tpk">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, minima?</a>
 
-			<hr class="divider">
+			<hr class="lineDivider">
 
 			<ul class="tpk">
-				<li class="item">Lorem ipsum dolor.</li>
-				<li class="item">Lorem ipsum dolor.</li>
+				<li class="item">
+					<img src="http://lorempicsum.com/up/30/30/2" alt="">
+					Lorem ipsum dolor.
+				</li>
+				<li class="item">
+					<img src="http://lorempicsum.com/up/80/80/3" class="rounded" alt="">
+					Lorem ipsum dolor.
+				</li>
 				<li class="item">Lorem ipsum dolor.</li>
 			</ul>
 
-			<hr class="divider">
+			<hr class="lineDivider">
 
 			<ul class="tpk horizontal">
 				<li class="item">Lorem ipsum dolor.</li>
-				<li class="item">Lorem ipsum dolor.</li>
+				<li class="item"><img src="http://lorempicsum.com/up/80/40/5" alt="">Lorem ipsum dolor.</li>
 				<li class="item">Lorem ipsum dolor.</li>
 			</ul>
 
-			<hr class="divider">
+			<hr class="lineDivider">
 
 			<ol class="tpk">
 				<li class="item">Lorem ipsum dolor.</li>
@@ -69,6 +75,29 @@
 				</li>
 				<li class="item">Lorem ipsum dolor.</li>
 			</ol>
+
+			<hr class="lineDivider">
+
+			<div class="tpk breadcrumb">
+			  <a class="section">Home</a>
+			  <div class="divider"> / </div>
+			  <a class="section">Contact</a>
+			  <div class="divider"> / </div>
+			  <a class="active section">Map</a>
+			</div>
+
+			<hr class="lineDivider">
+
+			<div class="tpk breadcrumb">
+			  <a class="section">Home</a>
+			  <i class="fa fa-angle-right chevron"></i>
+			  <a class="section">Contact</a>
+			  <i class="fa fa-angle-right chevron"></i>
+			  <a class="active section">Map</a>
+			</div>
+
+			<hr class="lineDivider">
+
 		</section>
 
 		<form class="container">
@@ -150,7 +179,34 @@
 			<div class="left icon input">
 		      <input type="text" placeholder="Search...">
 		      <i class="fa fa-bluetooth-b"></i>
+		  </div>
+		</form>
+
+		<form action="" class="container tpk">
+			<hr class="lineDivider">
+
+			<div class="field">
+		    <label>First Name</label>
+		    <input type="text" name="first-name" placeholder="First Name">
+		  </div>
+		  <div class="field">
+		    <div class="tpk checkbox">
+		      <input type="checkbox" tabindex="0" class="hidden">
+		      <label>I agree to the Terms and Conditions</label>
 		    </div>
+		  </div>
+		  <div class="field">
+	      <label>Pays</label>
+	      <select class="tpk dropdown">
+	        <option value="">Pays</option>
+			    <option value="BE">Belgique</option>
+			    <option value="FR">France</option>
+			    <option value="NL">Pays-Bas</option>
+			    <option value="LU">Luxembourg</option>
+			    <option value="AL">Allemagne</option>
+			  </select>
+			</div>
+		  <button class="tpk button" type="submit">Submit</button>
 		</form>
 
 		<script src="js/scripts.js"></script>

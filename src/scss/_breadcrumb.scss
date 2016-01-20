@@ -1,0 +1,36 @@
+@import "bower_components/compass-sass-mixins/lib/compass";
+@import "variables";
+
+.tpk.breadcrumb {
+	display: inline-block;
+	margin: 0;
+	line-height: 1;
+	vertical-align: middle;
+	font-family: $primaryFont;
+	font-size: 1rem;
+	a {
+		background: 0 0;
+		text-decoration: none;
+	}
+	a.section {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		cursor: pointer;
+	}
+	.divider {
+		display: inline-block;
+	}
+	.active {
+		color: $colorLink;
+	}
+	.chevron {
+		font-size: 0.8rem;
+		vertical-align: baseline;
+		display: inline-block;
+		opacity: .75;
+		margin: 0 .25rem;
+		color: $secondaryColor;
+		content: '>';
+	}
+}
