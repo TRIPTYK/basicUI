@@ -13,12 +13,20 @@
 	background: rgba(0, 0, 0, 0.7);
 
 	.popin-container {
-	  margin: 70px auto;
-	  padding: 20px;
-	  background: #fff;
-	  border-radius: 5px;
-	  width: 30%;
-	  position: relative;
-	  transition: all 5s ease-in-out;
+		position: relative;
+		margin: 70px auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		width: 30%;
+		position: relative;
+		transition: all 5s ease-in-out;
+		.close {
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			text-decoration: none;
+			color: #000;
+		}
 	}
 }

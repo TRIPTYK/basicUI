@@ -1,97 +1,35 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-html {
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-.button input {
-  cursor: pointer;
+.button {
   display: inline-block;
-  min-height: 1em;
-  outline: none;
-  border: none;
-  vertical-align: baseline;
-  background: #0093cb none;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1em;
-  text-transform: none;
-  text-shadow: none;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  font-style: normal;
-  margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
-  -webkit-border-radius: 5px 2px;
-  -moz-border-radius: 5px 2px;
-  -ms-border-radius: 5px 2px;
-  -o-border-radius: 5px 2px;
-  border-radius: 5px 2px;
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  will-change: '';
-  -webkit-tap-highlight-color: transparent; }
-  .button input:hover {
-    background-color: #48CDFF;
-    background-image: none;
+  min-height: 1em; }
+  .button button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+    background: #0093cb none;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1em;
+    text-transform: none;
+    text-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    font-style: normal;
+    margin: 0;
+    padding: 1em 1.5em 1em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -301,7 +239,7 @@ html {
     outline: 0;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     text-align: left;
-    line-height: 1.2142em;
+    line-height: 2em;
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     padding: .67861429em 1em;
     background: #fff;
@@ -319,6 +257,9 @@ html {
   .input.error input {
     background: rgba(255, 0, 0, 0.1);
     border: 1px solid rgba(255, 0, 0, 0.5); }
+  .input .fa {
+    margin-left: -1.2em;
+    line-height: 2.4em; }
 
 .tpk-popin {
   display: none; }
@@ -331,6 +272,7 @@ html {
   right: 0;
   background: rgba(0, 0, 0, 0.7); }
   #tpk-popin .popin-container {
+    position: relative;
     margin: 70px auto;
     padding: 20px;
     background: #fff;
@@ -338,6 +280,12 @@ html {
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out; }
+    #tpk-popin .popin-container .close {
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      text-decoration: none;
+      color: #000; }
 
 * {
   font-family: helvetica, arial, sans-serif; }

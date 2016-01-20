@@ -15,7 +15,7 @@
 			var content = $('#'+target).html();
 			var popin;
 			if($('#tpk-popin').length===0){
-				popin = $('<div id="tpk-popin"><div class="popin-container"><a href="#" class="close">x</a><div class="content"></div></div></div>');
+				popin = $('<div id="tpk-popin"><div class="popin-container"><a href="#" class="close fa fa-times"></a><div class="content"></div></div></div>');
 				$('body').append(popin);
 			} else {
 				$('#tpk-popin').css('display', 'block');

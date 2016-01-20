@@ -19,7 +19,7 @@
 	    outline: 0;
 	    -webkit-tap-highlight-color: rgba(255,255,255,0);
 	    text-align: left;
-	    line-height: 1.2142em;
+	    line-height: 2em;
 	    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 	    padding: .67861429em 1em;
 	    background: #fff;
@@ -44,6 +44,7 @@
     }
 
     .fa {
-    	
+    	margin-left: -1.2em;
+    	line-height: 2.4em;
     }
 }
