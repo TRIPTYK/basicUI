@@ -3,15 +3,15 @@
 @import 'baseSite';
 @import 'variables';
 
-<<<<<<< HEAD
 
-body{
-    color:#fff;
-=======
 .container {
 	width: 960px;
 	margin: 0 auto;
->>>>>>> a60392b85b986bd2f2c91b5383281547c97107ad
+	.row {
+		clear: both;
+		margin: 1em 0;
+		min-height: 3em;
+	}
 }
 
 .divider {

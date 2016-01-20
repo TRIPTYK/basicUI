@@ -2,7 +2,10 @@
 (function() {
     "use strict";
     let jakeSass = require(`${process.cwd()}/build/tools/jake-sass`);
+    //let jakeServer = require(`${process.cwd()}/build/tools/jake-server`);
     let startTime = Date.now();
+
+
 
     desc('default task');
     task('default', ['build'], () => {
@@ -10,7 +13,6 @@
         console.log('\n\nBUILD OK  (' + elapsedSeconds.toFixed(2) + 's)');
 
     });
-
 
     desc('build the css');
     task('build', () => {
@@ -33,9 +35,8 @@
         this.watchFiles.include([
             'src/**/*.scss'
         ]);
-
     });
 
-
+    //jakeServer.server();
 
 }());

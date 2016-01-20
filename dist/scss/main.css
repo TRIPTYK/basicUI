@@ -1,111 +1,210 @@
-<<<<<<< HEAD
 .button {
-=======
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-html {
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-.button input {
->>>>>>> a60392b85b986bd2f2c91b5383281547c97107ad
-  cursor: pointer;
-  display: inline-block;
-  min-height: 1em;
-  outline: none;
-  border: none;
-  vertical-align: baseline;
-  background: #0093cb none;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1em;
-  text-transform: none;
-  text-shadow: none;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  font-style: normal;
-  margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
-  -webkit-border-radius: 5px 2px;
-  -moz-border-radius: 5px 2px;
-  -ms-border-radius: 5px 2px;
-  -o-border-radius: 5px 2px;
-  border-radius: 5px 2px;
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
-  will-change: '';
-<<<<<<< HEAD
-  -webkit-tap-highlight-color: transparent;
-}
-
-.button:hover {
-  background-color: #48CDFF;
-  background-image: none;
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  color: rgba(0, 0, 0, 0.8);
-}
-=======
-  -webkit-tap-highlight-color: transparent; }
-  .button input:hover {
-    background-color: #48CDFF;
-    background-image: none;
+  min-height: 1em; }
+  .button button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: none;
+    border: none;
+    vertical-align: baseline;
+    background: #0093cb none;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1em;
+    text-transform: none;
+    text-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    font-style: normal;
+    margin: 0;
+    padding: 1em 1.5em 1em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-    color: rgba(0, 0, 0, 0.8); }
->>>>>>> a60392b85b986bd2f2c91b5383281547c97107ad
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent; }
+    .button button:hover {
+      background-color: #48CDFF;
+      background-image: none;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      color: rgba(0, 0, 0, 0.8); }
+  .button.left, .button.middle, .button.right {
+    float: left; }
+  .button.left button {
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px; }
+  .button.middle button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  .button.right button {
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0; }
+  .button.icon.noContent button .fa {
+    padding-left: 0; }
+  .button.icon button .fa {
+    color: #fff;
+    line-height: 0.99em;
+    padding-left: 1em; }
+  .button.buttonRed {
+    min-height: 1em; }
+    .button.buttonRed button {
+      cursor: pointer;
+      display: inline-block;
+      min-height: 1em;
+      outline: none;
+      border: none;
+      vertical-align: baseline;
+      background: #CB0000 none;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1em;
+      text-transform: none;
+      text-shadow: none;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      font-style: normal;
+      margin: 0;
+      padding: 1em 1.5em 1em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent; }
+      .button.buttonRed button:hover {
+        background-color: #DC6C6C;
+        background-image: none;
+        box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+        color: rgba(0, 0, 0, 0.8); }
+    .button.buttonRed.left, .button.buttonRed.middle, .button.buttonRed.right {
+      float: left; }
+    .button.buttonRed.left button {
+      -webkit-border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      -ms-border-radius: 5px 0 0 5px;
+      -o-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .button.buttonRed.middle button {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+    .button.buttonRed.right button {
+      -webkit-border-radius: 0 5px 5px 0;
+      -moz-border-radius: 0 5px 5px 0;
+      -ms-border-radius: 0 5px 5px 0;
+      -o-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0; }
+    .button.buttonRed.icon.noContent button .fa {
+      padding-left: 0; }
+    .button.buttonRed.icon button .fa {
+      color: #fff;
+      line-height: 0.99em;
+      padding-left: 1em; }
+    .button.buttonRed button {
+      -webkit-border-radius: 5px 0;
+      -moz-border-radius: 5px 0;
+      -ms-border-radius: 5px 0;
+      -o-border-radius: 5px 0;
+      border-radius: 5px 0; }
+  .button.buttonGreen {
+    min-height: 1em; }
+    .button.buttonGreen button {
+      cursor: pointer;
+      display: inline-block;
+      min-height: 1em;
+      outline: none;
+      border: none;
+      vertical-align: baseline;
+      background: #00CB72 none;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1em;
+      text-transform: none;
+      text-shadow: none;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      font-style: normal;
+      margin: 0;
+      padding: 1em 1.5em 1em;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+      will-change: '';
+      -webkit-tap-highlight-color: transparent; }
+      .button.buttonGreen button:hover {
+        background-color: #59E0A5;
+        background-image: none;
+        box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
+        color: rgba(0, 0, 0, 0.8); }
+    .button.buttonGreen.left, .button.buttonGreen.middle, .button.buttonGreen.right {
+      float: left; }
+    .button.buttonGreen.left button {
+      -webkit-border-radius: 5px 0 0 5px;
+      -moz-border-radius: 5px 0 0 5px;
+      -ms-border-radius: 5px 0 0 5px;
+      -o-border-radius: 5px 0 0 5px;
+      border-radius: 5px 0 0 5px; }
+    .button.buttonGreen.middle button {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0; }
+    .button.buttonGreen.right button {
+      -webkit-border-radius: 0 5px 5px 0;
+      -moz-border-radius: 0 5px 5px 0;
+      -ms-border-radius: 0 5px 5px 0;
+      -o-border-radius: 0 5px 5px 0;
+      border-radius: 0 5px 5px 0; }
+    .button.buttonGreen.icon.noContent button .fa {
+      padding-left: 0; }
+    .button.buttonGreen.icon button .fa {
+      color: #fff;
+      line-height: 0.99em;
+      padding-left: 1em; }
 
 .input {
   position: relative;
@@ -145,52 +244,15 @@ html {
     background: rgba(255, 0, 0, 0.1);
     border: 1px solid rgba(255, 0, 0, 0.5); }
 
-<<<<<<< HEAD
-.input input {
-  margin: 0;
-  max-width: 100%;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
-  outline: 0;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  text-align: left;
-  line-height: 1.2142em;
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-  padding: .67861429em 1em;
-  background: #fff;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  color: rgba(0, 0, 0, 0.87);
-  border-radius: .28571429rem;
-  -webkit-transition: box-shadow .1s ease,border-color .1s ease;
-  transition: box-shadow .1s ease,border-color .1s ease;
-  box-shadow: none;
-}
+* {
+  font-family: helvetica, arial, sans-serif; }
 
-.input input:focus {
-  border-color: #0093cb;
-  background: #fff;
-  color: rgba(0, 0, 0, 0.8);
-  box-shadow: none;
-}
-
-.input.error input {
-  background: rgba(255, 0, 0, 0.1);
-  border: 1px solid rgba(255, 0, 0, 0.5);
-}
-
-body {
-  color: #fff;
-}
-=======
 h1.tpk,
 h2.tpk,
 h3.tpk,
 h4.tpk,
 h5.tpk,
 h6.tpk {
-  font-family: helvetica, arial, sans-serif;
   line-height: 1.2; }
 
 h1.tpk {
@@ -212,13 +274,11 @@ h6.tpk {
   font-size: 0.8rem; }
 
 p.tpk {
-  font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #000000; }
 
 a.tpk {
-  font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
   line-height: 1.2;
   color: #aaaaaa; }
@@ -257,11 +317,14 @@ ol.tpk {
       margin-right: .5rem;
       display: inline-block;
       vertical-align: middle; }
->>>>>>> a60392b85b986bd2f2c91b5383281547c97107ad
 
 .container {
   width: 960px;
   margin: 0 auto; }
+  .container .row {
+    clear: both;
+    margin: 1em 0;
+    min-height: 3em; }
 
 .divider {
   border: 0;
