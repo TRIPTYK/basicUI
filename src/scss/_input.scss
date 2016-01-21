@@ -1,4 +1,5 @@
 @import "bower_components/compass-sass-mixins/lib/compass";
+@import "variables";
 
 .input {
 	position: relative;
@@ -9,7 +10,18 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     color: rgba(0,0,0,.87);
+    >label {
+		display: block;
+		margin: 0 0 0.5rem 0;
+		font-family: $secondaryFont;
+		color: $secondaryColor;
+		font-size: 0.8rem;
+		font-weight: bold;
+		line-height: 1em;
+		margin: 1em 1em 1em 0;
+	}
     input {
+    	@include appearance(none);
 	    margin: 0;
 	    max-width: 100%;
 	    -webkit-box-flex: 1;
@@ -35,7 +47,24 @@
 		    color: rgba(0,0,0,.8);
 		    box-shadow: none;
 	    }
+
+	    /*Checkboxes [START]*/
+    	&[type=checkbox] { display:none; } /* to hide the checkbox itself */
+		&[type=checkbox] + label:before {
+		  font-family: FontAwesome;
+		  display: inline-block;
+		}
+
+		&[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+		&[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+		&[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+		&[type=checkbox]:checked + label:before { letter-spacing: 8px; } /* allow space for check mark */
+		/*Checkboxes [END]*/
+	    
     }
+
+
     &.error {
     	input {
     		background: rgba(255,0,0,.1);
@@ -47,4 +76,22 @@
     	margin-left: -1.2em;
     	line-height: 2.4em;
     }
+}
+
+.label {
+	label {
+		display: block;
+		margin: 0 0 0.5rem 0;
+		font-family: $secondaryFont;
+		color: $secondaryColor;
+		font-size: 0.8rem;
+		font-weight: bold;
+		line-height: 1em;
+		margin: 1em 1em 1em 0;
+	}
+	&.error {
+		label {
+			color: #f00;
+		}
+	}
 }

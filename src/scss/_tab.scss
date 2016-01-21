@@ -1,0 +1,40 @@
+@import "bower_components/compass-sass-mixins/lib/compass";
+@import "variables";
+
+.tab {
+	header {
+		
+		a {
+			text-decoration: none;
+			border: 1px solid #000;
+			border-bottom: 0;
+			display: inline-block;
+			padding: 0.5em;
+			margin: 0;
+			color: #000;
+			&:first-child {
+				border-right: 0;
+				@include border-radius(5px 0 0 0);
+			}
+
+			&:last-child {
+				border-left: 0;
+				@include border-radius(0 5px 0 0);
+			}
+		}
+	}
+	>.content {
+		@include border-radius(0 5px 5px 5px);
+		border-top: 1px solid #000;
+		>div {
+			display: none;
+			border: 1px solid #000;
+			border-top: 0;
+			padding: 0.5em;
+			@include border-radius(0 5px 5px 5px);
+			&:first-child {
+				display: block;
+			}
+		}
+	}
+}

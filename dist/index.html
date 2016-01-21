@@ -100,6 +100,25 @@
 
 		</section>
 
+		<section class="container">
+			<div class="tab simple">
+				<header>
+					<a href="#1">One</a><a href="#2">Two</a><a href="#3">Three</a>
+				</header>
+				<div class="content">
+					<div class="tab-1">
+						One Content
+					</div>
+					<div class="tab-2">
+						Two Content
+					</div>
+					<div class="tab-3">
+						Three Content
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<form class="container">
 			<div class="row">
 				<div class="button">
@@ -165,14 +184,22 @@
 				<hr />
 				Content
 			</div>
+		</form>
+
+		<form action="" class="container tpk">
+			<hr class="lineDivider">
 
 			<div class="row">
 				<div class="input">
+					<label>Search: </label>
 					<input type="text" placeholder="Search..." />
 				</div>
 			</div>
 
 			<div class="row">
+				<div class="label error">
+					<label>Firstname: </label>
+				</div>
 				<div class="input error">
 					<input type="text" placeholder="Error" />
 				</div>
@@ -181,34 +208,29 @@
 			<div class="left icon input">
 		      <input type="text" placeholder="Mobile">
 		      <i class="fa fa-mobile"></i>
-		  </div>
-		</form>
+		  	</div>
 
-		<form action="" class="container tpk">
-			<hr class="lineDivider">
 
-			<div class="field">
-		    <label>First Name</label>
-		    <input type="text" name="first-name" placeholder="First Name">
-		  </div>
-		  <div class="field">
-		    <div class="tpk checkbox">
-		      <input type="checkbox" tabindex="0" class="hidden">
-		      <label>I agree to the Terms and Conditions</label>
-		    </div>
-		  </div>
-		  <div class="field">
-	      <label>Pays</label>
-	      <select class="tpk dropdown">
-	        <option value="">Pays</option>
-			    <option value="BE">Belgique</option>
-			    <option value="FR">France</option>
-			    <option value="NL">Pays-Bas</option>
-			    <option value="LU">Luxembourg</option>
-			    <option value="AL">Allemagne</option>
-			  </select>
+			<div class="row">
+				<div class="input">
+					<input id="box3" type="checkbox" />
+					<label for="box3">I agree to the Terms and Conditions</label>
+				</div>
 			</div>
-		  <button class="tpk button" type="submit">Submit</button>
+
+			<div class="row">
+				<div class="input">
+					<label>Pays</label>
+					<select>
+						<option value="">Pays</option>
+						<option value="BE">Belgique</option>
+						<option value="FR">France</option>
+						<option value="NL">Pays-Bas</option>
+						<option value="LU">Luxembourg</option>
+						<option value="AL">Allemagne</option>
+					</select>
+				</div>
+			</div>
 		</form>
 
 		<script src="js/scripts.js"></script>

@@ -6,6 +6,7 @@
 			$('.disabled button').prop('disabled', true);
 
 			$('.popinLauncher').on('click', tpkPopin);
+			$('.tab header >a').on('click', tpkTab);
 
 		};
 
@@ -28,6 +29,13 @@
 				e.preventDefault();
 				$('#tpk-popin').css('display', 'none');
 			});
+		}
+
+		function tpkTab(e){
+			e.preventDefault();
+			var target = $(this).attr('href').slice(1);
+			$(this).parent().parent().find('.content >div').hide();
+			$(".tab-"+target).show();
 		}
 
 		var that = {};

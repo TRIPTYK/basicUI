@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 .button {
   display: inline-block;
   min-height: 1em; }
@@ -229,7 +230,19 @@
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: rgba(0, 0, 0, 0.87); }
+  .input > label {
+    display: block;
+    margin: 0 0 0.5rem 0;
+    font-family: "Lato", sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 1em 1em 1em 0; }
   .input input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin: 0;
     max-width: 100%;
     -webkit-box-flex: 1;
@@ -248,18 +261,51 @@
     border-radius: .28571429rem;
     -webkit-transition: box-shadow .1s ease,border-color .1s ease;
     transition: box-shadow .1s ease,border-color .1s ease;
-    box-shadow: none; }
+    box-shadow: none;
+    /*Checkboxes [START]*/
+    /* to hide the checkbox itself */
+    /* unchecked icon */
+    /* space between checkbox and label */
+    /* checked icon */
+    /* allow space for check mark */
+    /*Checkboxes [END]*/ }
     .input input:focus {
       border-color: #0093cb;
       background: #fff;
       color: rgba(0, 0, 0, 0.8);
       box-shadow: none; }
+    .input input[type=checkbox] {
+      display: none; }
+    .input input[type=checkbox] + label:before {
+      font-family: FontAwesome;
+      display: inline-block; }
+    .input input[type=checkbox] + label:before {
+      content: "\f096"; }
+    .input input[type=checkbox] + label:before {
+      letter-spacing: 10px; }
+    .input input[type=checkbox]:checked + label:before {
+      content: "\f046"; }
+    .input input[type=checkbox]:checked + label:before {
+      letter-spacing: 8px; }
   .input.error input {
     background: rgba(255, 0, 0, 0.1);
     border: 1px solid rgba(255, 0, 0, 0.5); }
   .input .fa {
     margin-left: -1.2em;
     line-height: 2.4em; }
+
+.label label {
+  display: block;
+  margin: 0 0 0.5rem 0;
+  font-family: "Lato", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1em;
+  margin: 1em 1em 1em 0; }
+
+.label.error label {
+  color: #f00; }
 
 .tpk-popin {
   display: none; }
@@ -402,99 +448,48 @@ ol.tpk {
     color: rgba(0, 0, 0, 0.4);
     content: '>'; }
 
-form.tpk .field {
-  overflow: hidden;
-  *zoom: 1;
-  margin: 0 0 1rem 0; }
-  form.tpk .field > label {
-    display: block;
-    margin: 0 0 0.5rem 0;
-    font-family: "Lato", sans-serif;
-    color: rgba(0, 0, 0, 0.4);
-    font-size: 0.8rem;
-    font-weight: bold; }
-  form.tpk .field input[type="text"] {
-    margin: 0;
-    outline: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    line-height: 1.2;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background: #eaeaea;
-    border: 1px solid #cccccc;
-    color: rgba(0, 0, 0, 0.4);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px inset;
-    -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px inset;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 1px 1px inset;
-    -webkit-transition: color false false, 0.1s false false, ease false false, background false false, 0.1s false false, ease false false;
-    -moz-transition: color false false false, 0.1s false false false, ease false false false, background false false false, 0.1s false false false, ease false false false;
-    -o-transition: color false false false, 0.1s false false false, ease false false false, background false false false, 0.1s false false false, ease false false false;
-    transition: color, 0.1s, ease, background, 0.1s, ease; }
-    form.tpk .field input[type="text"]:focus {
-      background: #fff;
-      color: darker; }
-  form.tpk .field .dropdown {
-    display: block;
-    height: auto;
-    width: 100%;
-    background: #FFFFFF;
-    border: 1px solid rgba(34, 36, 38, 0.15);
-    border-radius: 0.28571429rem;
-    box-shadow: 0em 0em 0em 0em transparent inset;
-    padding: 0.62em 1em;
-    color: rgba(0, 0, 0, 0.87);
-    -webkit-transition: color 0.1s ease, border-color 0.1s ease;
-    transition: color 0.1s ease, border-color 0.1s ease; }
-
-form.tpk .checkbox {
-  position: relative;
+.tab header a {
+  text-decoration: none;
+  border: 1px solid #000;
+  border-bottom: 0;
   display: inline-block;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  outline: 0;
-  vertical-align: baseline;
-  min-height: 1.1rem;
-  font-size: 1rem;
-  line-height: 1.1rem;
-  min-width: 1.1rem; }
-  form.tpk .checkbox input[type="checkbox"] {
-    vertical-align: top;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0 !important;
-    outline: 0;
-    width: 1.1rem;
-    height: 1.1rem; }
-  form.tpk .checkbox input.hidden {
-    z-index: -1; }
-  form.tpk .checkbox input.hidden + label {
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none; }
-  form.tpk .checkbox > label {
-    position: relative;
-    display: block;
-    padding-left: 1.85714em;
-    outline: 0;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.4);
-    -webkit-transition: color false false, 0.1s false false, ease false false;
-    -moz-transition: color false false false, 0.1s false false false, ease false false false;
-    -o-transition: color false false false, 0.1s false false false, ease false false false;
-    transition: color, 0.1s, ease; }
+  padding: 0.5em;
+  margin: 0;
+  color: #000; }
+  .tab header a:first-child {
+    border-right: 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    -ms-border-radius: 5px 0 0 0;
+    -o-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0; }
+  .tab header a:last-child {
+    border-left: 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    -ms-border-radius: 0 5px 0 0;
+    -o-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0; }
+
+.tab > .content {
+  -webkit-border-radius: 0 5px 5px 5px;
+  -moz-border-radius: 0 5px 5px 5px;
+  -ms-border-radius: 0 5px 5px 5px;
+  -o-border-radius: 0 5px 5px 5px;
+  border-radius: 0 5px 5px 5px;
+  border-top: 1px solid #000; }
+  .tab > .content > div {
+    display: none;
+    border: 1px solid #000;
+    border-top: 0;
+    padding: 0.5em;
+    -webkit-border-radius: 0 5px 5px 5px;
+    -moz-border-radius: 0 5px 5px 5px;
+    -ms-border-radius: 0 5px 5px 5px;
+    -o-border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px; }
+    .tab > .content > div:first-child {
+      display: block; }
 
 .container {
   width: 960px;
